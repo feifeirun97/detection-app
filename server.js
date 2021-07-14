@@ -129,8 +129,8 @@ app.put("/imageurl", (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log("sever has successfully run on port 3000");
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`sever has successfully run on port ${process.env.PORT}`);
 });
 
 /*
